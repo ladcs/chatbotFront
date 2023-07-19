@@ -1,4 +1,3 @@
-import { ScrollArea } from "@radix-ui/react-scroll-area"
 import { Begin } from "./Begin"
 import { CardContent } from "./ui/card"
 import { MessageInChat } from "./message"

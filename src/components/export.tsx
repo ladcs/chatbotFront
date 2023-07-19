@@ -18,15 +18,9 @@ export function ExportMessages() {
  
   useEffect(() => {
     api.get('/chat').then((data)=>{
-      console.log(data)
       setCsvData(data.data);
     }).catch(err => alert(err));
-    /*const titleCsv = ['user', 'id', 'date'];
-    //@ts-ignore
-    const dataObjToCsv = dataObj.map(obj => [obj.user, obj.id, obj.date]);
-    //@ts-ignore
-    setCsvData([titleCsv, ...dataObjToCsv]);
-  // eslint-disable-next-line react-hooks/exhaustive-deps*/
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

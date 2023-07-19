@@ -1,6 +1,5 @@
 import { FormEvent, useState } from "react";
 import { Button } from "./ui/button";
-import Link from "next/link";
 import { ApplyLoan } from "./ApplyLoan";
 import { ConditionLoan } from "./ConditionLoan";
 import { HelpLoan } from "./help";
