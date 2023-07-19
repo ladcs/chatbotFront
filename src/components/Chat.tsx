@@ -46,18 +46,6 @@ export function Chat() {
       setIsLoged(false);
     }
   }, []);
-
-  useEffect(() => {
-    if(name !== null) {
-      const helloUser: IMessage = {
-        content: `Hello, ${name}, what can I help you?`,
-        createdAt: new Date(),
-        role: 'assistant',
-        id: v4(),
-      }
-        setContextMessages([...contextMessages, helloUser]);
-      }
-  }, [name])
   
   const sendMessage = (e: FormEvent) => {
     e.preventDefault();
